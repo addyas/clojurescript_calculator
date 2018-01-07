@@ -1,0 +1,25 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+  height: 70%;
+}
+
+.custom-btn{
+  margin: 10px 10px;
+  width: 80px;
+  margin-left: 70px;
+}
+
+.custom-input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.h1-title{
+  margin-top: 20px;
+}
