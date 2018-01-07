@@ -11,19 +11,19 @@
 
                 <h1 class="h1-title">Clojure-esq Calculator</h1>
                 <p>Choose an operation first, then the operands</p>
-                  <div class="jumbotron"></div>
+                  <div class="jumbotron" id="screen"></div>
                   <div class="row">
                       <div class="col-sm-4">
                         <button value="+" type="button" class="btn btn-info btn-lg custom-btn" id="plus">+</button>
                       </div>
                       <div class="col-sm-4">
-                        <div class="input-group addition">
-                          <input type="number" id="num-input" class="form-control custom-input" placeholder="1">
+                        <div class="input-group">
+                          <input type="number" id="add-num-input-1" class="form-control custom-input" placeholder="1">
                         </div>
                       </div>
                       <div class="col-sm-4">
-                        <div class="input-group addition">
-                          <input type="number" id="num-input" class="form-control custom-input" placeholder="2">
+                        <div class="input-group">
+                          <input type="number" id="add-num-input-2" class="form-control custom-input" placeholder="2">
                         </div>
                       </div>
 
@@ -33,13 +33,13 @@
                       <button type="button" class="btn btn-info btn-lg custom-btn " id="minus">-</button>
                     </div>
                     <div class="col-sm-4">
-                      <div class="input-group subtraction">
-                        <input type="number" id="num-input" class="form-control custom-input" placeholder="1">
+                      <div class="input-group">
+                        <input type="number" id="sub-num-input-1" class="form-control custom-input" placeholder="1">
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <div class="input-group subtraction">
-                        <input type="number" id="num-input" class="form-control custom-input" placeholder="2">
+                      <div class="input-group">
+                        <input type="number" id="sub-num-input-2" class="form-control custom-input" placeholder="2">
                       </div>
                     </div>
                   </div>
@@ -48,28 +48,28 @@
                       <button type="button" class="btn btn-info btn-lg custom-btn" id="multiplication">*</button>
                     </div>
                     <div class="col-sm-4">
-                      <div class="input-group multiplication">
-                        <input type="number" id="num-input" class="form-control custom-input" placeholder="1">
+                      <div class="input-group">
+                        <input type="number" id="mult-num-input-1" class="form-control custom-input" placeholder="1">
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <div class="input-group multiplication">
-                        <input type="number" id="num-input" class="form-control custom-input" placeholder="2">
+                      <div class="input-group">
+                        <input type="number" id="mult-num-input-2" class="form-control custom-input" placeholder="2">
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-4">
-                      <button type="button" class="btn btn-info btn-lg custom-btn" id = "division">/</button>
+                      <button type="button" class="btn btn-info btn-lg custom-btn" id="division">/</button>
                     </div>
                       <div class="col-sm-4">
-                        <div class="input-group subtraction">
-                          <input type="number" id="num-input" class="form-control custom-input" placeholder="1">
+                        <div class="input-group">
+                          <input type="number" id="div-num-input-1" class="form-control custom-input" placeholder="1">
                         </div>
                       </div>
                       <div class="col-sm-4">
-                        <div class="input-group subtraction">
-                          <input type="number" id="num-input" class="form-control custom-input" placeholder="2">
+                        <div class="input-group">
+                          <input type="number" id="div-num-input-2" class="form-control custom-input" placeholder="2">
                         </div>
                       </div>
                   </div>
