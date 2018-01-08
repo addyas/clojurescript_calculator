@@ -2,8 +2,8 @@
   (:import [goog.dom query]) ; super handy, not available by default in goog.dom
   (:require
    [clojure.string :refer [capitalize]]
+   [cljs.test :refer-macros [deftest is testing run-tests]]
    [goog.dom :as gdom]
-   [goog.dom.safe :as safe]
    [goog.events :as gevents]))
 
 (enable-console-print!)
@@ -89,3 +89,33 @@
   (gdom/getElement "division")
   (.-CLICK gevents/EventType)
     handle-division)
+
+
+;; testing section
+(deftest test-add
+(is (= (add 2 4) (+ 2 4)))
+(is (= (add 0 4) (+ 0 4)))
+(is (= (add 0 0) (+ 0 0)))
+(is (= (add 0 -5) (+ 0 -5)))
+(is (= (add -5 -7) (+ -5 -7))))
+
+(deftest test-subtract
+(is (= (subtract 2 4) (- 2 4)))
+(is (= (subtract 0 4) (- 0 4)))
+(is (= (subtract 0 0) (- 0 0)))
+(is (= (subtract 0 -5) (- 0 -5)))
+(is (= (subtract -5 -7) (- -5 -7))))
+
+(deftest test-multiply
+(is (= (multiply 2 4) (* 2 4)))
+(is (= (multiply 0 4) (* 0 4)))
+(is (= (multiply 0 0) (* 0 0)))
+(is (= (multiply 0 -5) (* 0 -5)))
+(is (= (multiply -5 -7) (* -5 -7))))
+
+(deftest test-division
+(is (= (division 2 4) (/ 2 4)))
+(is (= (division 0 4) (/ 0 4)))
+(is (= (division 0 0) (/ 0 0)))
+(is (= (division 0 -5) (/ 0 -5)))
+(is (= (division -5 -7) (/ -5 -7))))
